@@ -14,8 +14,8 @@ layout: default
   <div class="divider"><span></span><i>&#9733;</i><span></span></div>
   <p class="section-intro">
     I'm a software engineer passionate about Cloud Native and Kubernetes
-    technologies, and about bringing that same engineering rigor into home
-    automation. Here's some of my open source work.
+    technologies, and about home automation. Here's some of my open source
+    work.
   </p>
   <div class="project-grid">
     {% for project in site.data.projects %}
@@ -37,6 +37,7 @@ layout: default
   <div class="divider divider--light"><span></span><i>&#9733;</i><span></span></div>
   <div class="passions">
     <div class="passion">
+      <span class="passion-logo"><img src="/assets/images/logos/kubernetes.svg" alt="Kubernetes logo"></span>
       <h3>Cloud Native &amp; Kubernetes</h3>
       <p>
         Designing and operating Kubernetes-based systems, and applying
@@ -44,14 +45,15 @@ layout: default
       </p>
     </div>
     <div class="passion">
-      <h3>Home Automation on Kubernetes</h3>
+      <span class="passion-logo"><img src="/assets/images/logos/home-assistant.svg" alt="Home Assistant logo"></span>
+      <h3>Home Automation</h3>
       <p>
-        Running my home automation stack on Kubernetes, and building the
-        bridges, integrations and operators needed to make smart home
-        systems play well with cloud native infrastructure.
+        A Home Assistant fan running ESPHome, Shelly, Tasmota and WLED
+        devices throughout the house.
       </p>
     </div>
     <div class="passion">
+      <span class="passion-logo"><img src="/assets/images/logos/openzev.png" alt="OpenZEV logo"></span>
       <h3>OpenZEV</h3>
       <p>
         An open source platform for operating and billing (v)ZEV energy

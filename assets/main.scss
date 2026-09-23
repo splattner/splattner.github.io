@@ -200,6 +200,24 @@ a {
   gap: 2rem;
   text-align: left;
 
+  .passion-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: $white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin-bottom: 1rem;
+
+    img {
+      width: 34px;
+      height: 34px;
+      object-fit: contain;
+    }
+  }
+
   .passion h3 {
     font-size: 1rem;
     color: $white;
