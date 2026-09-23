@@ -13,8 +13,6 @@ sponsors_url: https://github.com/sponsors/splattner
 coffee_url: https://buymeacoffee.com/sebastian.plattner
 
 # Build settings
-theme: minima
-
 plugins:
   - jekyll-feed
   - jekyll-seo-tag

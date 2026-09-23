@@ -2,20 +2,39 @@
 layout: default
 ---
 
-<section class="hero">
+<section id="home" class="hero">
   <img class="hero-avatar" src="/assets/images/profile.jpg" alt="Sebastian Plattner" width="140" height="140">
   <h1>Sebastian Plattner</h1>
+  <div class="divider divider--light"><span></span><i>&#9733;</i><span></span></div>
   <p class="hero-tagline">{{ site.tagline }}</p>
-  <p class="hero-intro">
-    I'm a software engineer passionate about Cloud Native and Kubernetes
-    technologies, and about bringing that same engineering rigor into home
-    automation. Most of my open source work sits right at that
-    intersection.
-  </p>
 </section>
 
-<section class="about">
-  <h2>What I'm into</h2>
+<section id="projects" class="section section--white">
+  <h2>Projects</h2>
+  <div class="divider"><span></span><i>&#9733;</i><span></span></div>
+  <p class="section-intro">
+    I'm a software engineer passionate about Cloud Native and Kubernetes
+    technologies, and about bringing that same engineering rigor into home
+    automation. Here's some of my open source work.
+  </p>
+  <div class="project-grid">
+    {% for project in site.data.projects %}
+    <div class="project-card{% if project.highlight %} project-card--highlight{% endif %}">
+      <h3><a href="{{ project.url }}">{{ project.name }}</a></h3>
+      <p>{{ project.description }}</p>
+      <div class="project-meta">
+        {% if project.language %}<span class="project-lang">{{ project.language }}</span>{% endif %}
+        <a class="project-link" href="{{ project.url }}">View on GitHub &rarr;</a>
+        {% if project.homepage %}<a class="project-link" href="{{ project.homepage }}">Website &rarr;</a>{% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section id="about" class="section section--teal">
+  <h2>What I'm Into</h2>
+  <div class="divider divider--light"><span></span><i>&#9733;</i><span></span></div>
   <div class="passions">
     <div class="passion">
       <h3>Cloud Native &amp; Kubernetes</h3>
@@ -43,30 +62,14 @@ layout: default
   </div>
 </section>
 
-<section class="projects">
-  <h2>Open Source Projects</h2>
-  <div class="project-grid">
-    {% for project in site.data.projects %}
-    <div class="project-card{% if project.highlight %} project-card--highlight{% endif %}">
-      <h3><a href="{{ project.url }}">{{ project.name }}</a></h3>
-      <p>{{ project.description }}</p>
-      <div class="project-meta">
-        {% if project.language %}<span class="project-lang">{{ project.language }}</span>{% endif %}
-        <a class="project-link" href="{{ project.url }}">View on GitHub &rarr;</a>
-        {% if project.homepage %}<a class="project-link" href="{{ project.homepage }}">Website &rarr;</a>{% endif %}
-      </div>
-    </div>
-    {% endfor %}
-  </div>
-</section>
-
-<section class="support">
-  <h2>Support my work</h2>
-  <p>
+<section id="support" class="section section--white">
+  <h2>Support My Work</h2>
+  <div class="divider"><span></span><i>&#9733;</i><span></span></div>
+  <p class="section-intro">
     If any of this is useful to you, you can support its development:
   </p>
   <div class="support-links">
-    <a class="support-button" href="{{ site.sponsors_url }}">GitHub Sponsors</a>
-    <a class="support-button" href="{{ site.coffee_url }}">Buy Me a Coffee</a>
+    <a class="btn btn--outline" href="{{ site.sponsors_url }}">GitHub Sponsors</a>
+    <a class="btn btn--outline" href="{{ site.coffee_url }}">Buy Me a Coffee</a>
   </div>
 </section>

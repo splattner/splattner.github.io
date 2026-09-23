@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <link type="application/atom+xml" rel="alternate" href="{{ "/feed.xml" | relative_url }}" title="{{ site.title }}">
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="nav-wrap">
+      <a class="nav-brand" href="{{ "/" | relative_url }}#home">{{ site.title }}</a>
+      <div class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#support">Support</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-wrap">
+      <div class="footer-col">
+        <h3>{{ site.title }}</h3>
+        <p>{{ site.tagline }}</p>
+      </div>
+      <div class="footer-col">
+        <h3>Elsewhere</h3>
+        <p>
+          <a href="https://github.com/{{ site.github_username }}">GitHub</a><br>
+          <a href="{{ site.sponsors_url }}">GitHub Sponsors</a><br>
+          <a href="{{ site.coffee_url }}">Buy Me a Coffee</a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <h3>This Site</h3>
+        <p>
+          Built with Jekyll, hosted on GitHub Pages.<br>
+          &copy; {{ site.time | date: "%Y" }} {{ site.title }}
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
