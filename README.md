@@ -34,9 +34,9 @@ sponsor links).
    - **Source**: Deploy from a branch
    - **Branch**: `main` / `(root)`
 4. Still on the Pages settings page, under **Custom domain**, enter
-   `sebastianplattner.ch` and save. (GitHub will commit/update the `CNAME`
-   file automatically — it's already included here too.) Wait for the DNS
-   check to go green, then enable **Enforce HTTPS**.
+   `www.sebastianplattner.ch` and save. (GitHub will commit/update the
+   `CNAME` file automatically — it's already included here too.) Wait for
+   the DNS check to go green, then enable **Enforce HTTPS**.
 
 ## DNS records (at your domain provider)
 
@@ -59,5 +59,5 @@ hostname:
 take anywhere from a few minutes to a few hours.
 
 Once both `sebastianplattner.ch` and `www.sebastianplattner.ch` resolve and
-the Pages custom-domain check passes, GitHub will redirect `www` to the apex
-domain (as set in `CNAME`) and serve HTTPS automatically.
+the Pages custom-domain check passes, GitHub will redirect the apex domain
+to `www` (as set in `CNAME`) and serve HTTPS automatically.
