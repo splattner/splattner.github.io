@@ -6,6 +6,14 @@ description: >-
 tagline: Cloud Native · Kubernetes · Home Automation
 url: "https://www.sebastianplattner.ch"
 baseurl: ""
+permalink: /blog/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
 
 # Author / social
 github_username: splattner

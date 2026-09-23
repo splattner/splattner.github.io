@@ -1,0 +1,26 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+---
+
+<section class="section section--white post-index">
+  <h1>Blog</h1>
+  <div class="divider"><span></span><i>&#9733;</i><span></span></div>
+  <p class="section-intro">
+    Write-ups on home automation, Kubernetes side projects, and things I've
+    taken apart or reverse-engineered.
+  </p>
+  <div class="post-list">
+    {% for post in site.posts %}
+    <a class="post-list-item" href="{{ post.url | relative_url }}">
+      <p class="post-list-meta">
+        {{ post.date | date: "%B %-d, %Y" }}
+        {% for tag in post.tags %}<span class="post-tag">{{ tag }}</span>{% endfor %}
+      </p>
+      <h3>{{ post.title }}</h3>
+      <p>{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
+    </a>
+    {% endfor %}
+  </div>
+</section>
