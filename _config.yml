@@ -14,11 +14,6 @@ coffee_url: https://buymeacoffee.com/sebastian.plattner
 
 # Build settings
 theme: minima
-minima:
-  skin: auto
-  social_links:
-    - { platform: github, user_url: "https://github.com/splattner" }
-    - { platform: github_sponsors, user_url: "https://github.com/sponsors/splattner" }
 
 plugins:
   - jekyll-feed
