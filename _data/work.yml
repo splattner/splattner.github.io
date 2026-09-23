@@ -1,0 +1,45 @@
+- title: "Namespace Scoping for Hubble UI with Cilium OSS"
+  description: >-
+    An open source project adding tenant-aware namespace scoping to Cilium's
+    Hubble UI, so teams only see the flows and resources in their own
+    namespaces.
+  url: https://www.puzzle.ch/blog/2026/09/08/namespace-scoping-fuer-hubble-ui-mit-cilium-oss
+  tag: Blog Post
+  source: Puzzle ITC
+  source_url: https://www.puzzle.ch/
+
+- title: "Kubernetes Consulting"
+  description: >-
+    A customer success story about hands-on Kubernetes consulting and
+    platform engineering work.
+  url: https://www.puzzle.ch/success-storys/kubernetes-consulting
+  tag: Success Story
+  source: Puzzle ITC
+  source_url: https://www.puzzle.ch/
+
+- title: "Kubernetes Resource Requests for GitLab Jobs"
+  description: >-
+    A talk at Cloud Native Zürich on right-sizing Kubernetes resource
+    requests for GitLab CI jobs, based on work done for Die Mobiliar.
+  url: https://youtu.be/PlANtk-b3Ns?si=NsmmdU-BtMEBshbg
+  tag: Talk
+  source: Cloud Native Zürich
+  source_url: https://www.meetup.com/cloud-native-zurich/
+
+- title: "acend/infrastructure"
+  description: >-
+    Infrastructure-as-code for acend's platform, managed with Terraform and
+    ArgoCD.
+  url: https://github.com/acend/infrastructure
+  tag: Open Source
+  source: acend
+  source_url: https://acend.ch/
+
+- title: "acend/kubernetes-basics-training"
+  description: >-
+    Open source Kubernetes training material used to teach Kubernetes
+    fundamentals.
+  url: https://github.com/acend/kubernetes-basics-training
+  tag: Open Source
+  source: acend
+  source_url: https://acend.ch/

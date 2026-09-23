@@ -64,6 +64,29 @@ layout: default
   </div>
 </section>
 
+<section id="work" class="section section--white">
+  <h2>Professional Work</h2>
+  <div class="divider"><span></span><i>&#9733;</i><span></span></div>
+  <p class="section-intro">
+    I work as a Platform Architect at <a href="https://www.puzzle.ch/">Puzzle ITC</a>,
+    and I'm a co-founder of <a href="https://acend.ch/">acend</a>. Here's a
+    selection of my public work, talks and open source contributions.
+  </p>
+  <div class="project-grid">
+    {% for item in site.data.work %}
+    <div class="project-card">
+      <h3><a href="{{ item.url }}">{{ item.title }}</a></h3>
+      <p>{{ item.description }}</p>
+      <div class="project-meta">
+        <span class="project-lang">{{ item.tag }}</span>
+        <a class="project-link" href="{{ item.source_url }}">{{ item.source }}</a>
+        <a class="project-link" href="{{ item.url }}">View &rarr;</a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
 <section id="support" class="section section--white">
   <h2>Support My Work</h2>
   <div class="divider"><span></span><i>&#9733;</i><span></span></div>
