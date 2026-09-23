@@ -222,6 +222,14 @@ a {
     font-size: 1rem;
     color: $white;
     margin-bottom: 0.6rem;
+
+    a {
+      color: $white;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 
   .passion p {
