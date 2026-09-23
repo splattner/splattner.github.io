@@ -1,0 +1,33 @@
+# Site settings
+title: Sebastian Plattner
+description: >-
+  Cloud Native & Kubernetes engineer building open source home automation.
+  Creator of OpenZEV.
+tagline: Cloud Native · Kubernetes · Home Automation
+url: "https://sebastianplattner.ch"
+baseurl: ""
+
+# Author / social
+github_username: splattner
+sponsors_url: https://github.com/sponsors/splattner
+coffee_url: https://buymeacoffee.com/sebastian.plattner
+
+# Build settings
+theme: minima
+minima:
+  skin: auto
+  social_links:
+    - { platform: github, user_url: "https://github.com/splattner" }
+    - { platform: github_sponsors, user_url: "https://github.com/sponsors/splattner" }
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Only these files/dirs are needed for the built site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

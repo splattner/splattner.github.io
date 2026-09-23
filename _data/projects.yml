@@ -1,0 +1,35 @@
+- name: OpenZEV
+  url: https://github.com/splattner/openzev
+  homepage: https://www.openzev.ch/
+  language: Python
+  description: >-
+    Open source platform for operating and billing (v)ZEV energy communities.
+  highlight: true
+
+- name: digitalstrom-vdc-bridge
+  url: https://github.com/splattner/digitalstrom-vdc-bridge
+  language: Go
+  description: >-
+    A digitalSTROM virtual device connector (vDC) that bridges other smart
+    home systems into the digitalSTROM world.
+
+- name: alertmanager-label-enricher
+  url: https://github.com/splattner/alertmanager-label-enricher
+  language: Go
+  description: >-
+    Inline proxy that enriches Prometheus alert labels from Kubernetes, HTTP,
+    and file lookups before forwarding to Alertmanager.
+
+- name: oekoboiler-uart-reverse-engineering
+  url: https://github.com/splattner/oekoboiler-uart-reverse-engineering
+  language: Python
+  description: >-
+    Reading water temperature, operating mode and PV state straight off the
+    wire between a heat-pump water heater's two circuit boards, no cloud, no
+    API, turned into an ESPHome / Home Assistant sensor.
+
+- name: goucrt
+  url: https://github.com/splattner/goucrt
+  language: Go
+  description: >-
+    An Unfolded Circle Remote Two integration written in Go.
